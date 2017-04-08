@@ -1,0 +1,23 @@
+<hibernate-configuration>
+    <session-factory>
+ 
+        <!-- Connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:df70jvgue2op1u://ec2-54-83-48-188.compute-1.amazonaws.com:5432</property>
+        <property name="hibernate.connection.username">fpkykrzwfrvzwr</property>
+        <property name="hibernate.connection.password">1e46efcde40627108c24bd76d1f994273dc5a9447fdb48bd22c6d7bfd8cf9ea4</property>
+ 
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+ 
+        <!-- Print executed SQL to stdout -->
+        <property name="show_sql">true</property>
+ 
+        <!-- Drop and re-create all database on startup -->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+ 
+        <!-- Annotated entity classes -->
+        <mapping class="com.jvmhub.tutorial.entity.AppUser"/>
+        
+    </session-factory>
+</hibernate-configuration>
