@@ -6,8 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="location")
 public class LocationEntity implements Serializable {
 
 	/**
@@ -25,6 +27,8 @@ public class LocationEntity implements Serializable {
 	
 	private String name;
 	
+	private String shortName;
+	
 	public Long getId() {
 		return id;
 	}
@@ -39,5 +43,13 @@ public class LocationEntity implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getShortName() {
+		return shortName;
+	}
+
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
 	}
 }
