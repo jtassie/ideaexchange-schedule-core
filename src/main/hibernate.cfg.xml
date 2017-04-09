@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
  
         <!-- Connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:df70jvgue2op1u://ec2-54-83-48-188.compute-1.amazonaws.com:5432</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-83-48-188.compute-1.amazonaws.com:5432/df70jvgue2op1u?sslmode=require</property>
         <property name="hibernate.connection.username">fpkykrzwfrvzwr</property>
         <property name="hibernate.connection.password">1e46efcde40627108c24bd76d1f994273dc5a9447fdb48bd22c6d7bfd8cf9ea4</property>
  
@@ -17,7 +19,7 @@
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
  
         <!-- Annotated entity classes -->
-        <mapping class="com.jvmhub.tutorial.entity.AppUser"/>
+        <mapping class="org.ideaexchange.entity.LocationEntity"/>
         
     </session-factory>
 </hibernate-configuration>
