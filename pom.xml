@@ -12,8 +12,36 @@
 		<slf4j.version>1.7.5</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<repositories>
+       <repository>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+          <id>bintray-microsoftgraph-Maven</id>
+          <name>bintray</name>
+          <url>http://dl.bintray.com/msopentech/Maven</url>
+      </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-microsoftgraph-Maven</id>
+            <name>bintray-plugins</name>
+            <url>http://dl.bintray.com/msopentech/Maven</url>
+        </pluginRepository>
+    </pluginRepositories>
   
 	<dependencies>
+	
+	    <dependency>
+		  <groupId>com.microsoft.services</groupId>
+		  <artifactId>graph-services-java</artifactId>
+		  <version>0.2.5</version>
+		</dependency>
+	
 		<dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
