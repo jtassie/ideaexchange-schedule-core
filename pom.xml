@@ -36,17 +36,23 @@
   
 	<dependencies>
 	
+	   <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+		    <groupId>joda-time</groupId>
+		    <artifactId>joda-time</artifactId>
+		    <version>2.9.9</version>
+		</dependency>
+			   
 	    <dependency>
 		  <groupId>com.microsoft.services</groupId>
 		  <artifactId>graph-services-java</artifactId>
 		  <version>0.2.5</version>
 		</dependency>
-		
 		<dependency>
-		    <groupId>com.mashape.unirest</groupId>
-		    <artifactId>unirest-java</artifactId>
-		    <version>1.4.9</version>
-		</dependency>
+          <groupId>com.microsoft.services</groupId>
+          <artifactId>outlook-services-java</artifactId>
+          <version>1.0.0</version>
+        </dependency>
 	
 		<dependency>
             <groupId>org.hibernate</groupId>
